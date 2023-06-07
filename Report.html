@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group 15: Final Report</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="acord">
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Executive Summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Navigation Map</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Design Princples</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Affordance</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Fitts' Law</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Constraints</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading6">Progressive Disclosure</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading7">Interactivity</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading8">Metaphors</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading9">Feedback</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading10">80/20 Rule</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading11">Flexibility</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading12">Mapping</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading13">Error Prevention</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading14">Confirmation</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading15">Diversity</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading16">Selective Attention</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading17">Hick's Law</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading18">Fidelity Principle</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading20">Simplicity</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading21">Consistency</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading22">Learnability</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading23">Working Memory Principle</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Heuristic Evaluations</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading24">Visibilty of System Status</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading25">Match Between System and the Real World</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading26">User Control and Freedom</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading27">Consistency and Standards</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading28">Error Prevention</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading29">Recognition rather than recall</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading30">Flexibility and Efficiency of Use</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading31">Aesthetic and Minimalist Design</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading32">Help Users Recognize, Diagnose, and Recover from
+                Errors</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading33">Help and Documentation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading34">Final Thoughts</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h4 id="scrollspyheading1">Executive Summary</h4>
+      <h6>The Problem:</h6>
+      <p>Our project is based on the original design of the CS3319 final project that involved the creation of a bus
+        trip booking system with a functional database. This previous design suffers from a lackluster front-end
+        usability and a database-centered design. In our groups testing, this design proved to implement no design
+        principles clearly, along with a confusing layout and difficult to read information.</p>
+      <p>Highlighted issues begin with the absence of any external consistency between this design and other similar
+        trip booking services in the market. Missing features of wishlist, login, signup, and home pages as well as
+        aesthetics contribute to this issue. Additionally, the user's working memory is challenged by the failure to
+        properly use the visibility and affordance principles. Buttons are all laid out on a single page with no
+        feedback apart from textual descriptions to indicate their clickable nature. Therefore, by making no use of the
+        visibility or affordance principles, it forces the user to use more of their working memory towards the
+        functionality of the website over their own goals. Finally, the original design lacked flexibility and
+        efficiency as each piece of functionality only had a single avenue to perform the task with each avenue being
+        either confusing or too complex.</p>
+      <p>Overall, the design of the original CS3319 bus trip project suffered from a poor user-centered design, making
+        the project feel unusable from a user experience perspective. The goal of our group project is to redesign the
+        entire user experience from the ground up using the design principles and methodologies learned within this
+        course.</p>
+
+      <h6>Our Approach:</h6>
+      <p>To create a more usable and effective design, our group aims to create a better user-centered design through
+        the implementation of appropriate design principles.</p>
+
+      <h6>Plan:</h6>
+      <p>- Adding the new web pages of a sign in, sign up, home, and wishlist page.</p>
+      <p>- Extensive user tasking</p>
+      <p>- Reorder all web pages</p>
+      <p>- Divide web pages to group members</p>
+      <p>- On each page, identify the key issues and areas for improvement</p>
+      <p>- Create mock Figma redesigns of our web pages with newly integrated design principles</p>
+      <p>- Group critiques web pages</p>
+      <p>- Final HTML implementation of web pages</p>
+      <p>- Heuristic evaluation</p>
+
+      <h6>Results:</h6>
+      <p>With the addition of new web pages, we were able to ensure that our redesign was externally consistent with the
+        features found within the industry standard. Continuing this consistency, our user tasking allowed us to more
+        effectively reorder all the webpages into a layout that accounted for our desired user flows. On top of this,
+        the reordering aided the redesign in resolving the visibility, working memory, flexibility and efficiency issues
+        with the original design. By individually working on separate web pages, our team effectively created unique
+        design solutions that were made consistent across the system through the group critiques. Each web page became
+        the host of a variety of design principles with things like affordance through button colouring, error
+        prevention, and metaphors as some of the highlights. By evaluating our redesign with Nielson’s 10 heuristics for
+        design, our group confirmed the success of the system as it featured each heuristic throughout.</p>
+
+      <h6>Conclusion:</h6>
+      <p>In conclusion, our redesign of the CS3319 bus trip booking system is effective at creating a more user-centered
+        design that is intuitive and easy to use. The redesign shows our implementations of a number of design
+        principles that improve upon the function and usability of the system.</p>
+    </div>
+    <h4 id="scrollspyHeading2">Navigation Map</h4>
+    <img src="navigationweb.png">
+    <h4 id="scrollspyHeading3">Design Princples</h4>
+    <h6>Affordance:</h6>
+    <p>We used affordance across the system with our button shading artifact that ensures the user can easily tell
+      whether a button is clickable or not. Notable examples are in the signup page that highlights fields or buttons in
+      use as well as the trip information page that shades the arrow buttons when hovering over them for scrolling
+      through photos.</p>
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
+        aria-expanded="false" aria-controls="collapseExample1">
+        Click to Show Image!
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample1">
+      <div class="card card-body">
+        <img src="Screenshot 2023-04-06 013935.png">
+      </div>
+    </div>
+    <h6 id="scrollspyHeading4">Fitts' Law:</h6>
+    <p>Found within the signup and login pages, the subtext for creating an account or requesting a password reset is
+      directly below the respective signup and password fields, putting it at an easily reachable distance.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+          aria-expanded="false" aria-controls="collapseExample2">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+          <img src="Fitts Law.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading5">Constraints</h6>
+    <p>Constraints are found throughout the payment pages where information about the selected trip is auto populated,
+      thus reducing the amount of actions the user can undertake. On top of this, the payment page only allows for
+      critical information such as credit card numbers and postal codes to be inputted in one format. </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+          aria-expanded="false" aria-controls="collapseExample3">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body">
+          <img src="Constraints.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading6">Progressive Disclosure</h6>
+    <p>On the account creation page, progressive disclosure is used to separate information and settings options for the
+      user's account across several different tabs; overview, payment information, past trips, and settings. This is to
+      make the information more palatable by releasing it in smaller chunks for the user to engage with.</p>
+    <p>For the booking pages, this is represented in an accordion form that will only display one tab at a time to avoid
+      overwhelming the user.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4"
+          aria-expanded="false" aria-controls="collapseExample4">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample4">
+        <div class="card card-body">
+          <img src="Progressive disclosure.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading7">Interactivity</h6>
+    <p>On the wishlist page, the user can drag and drop their wishlisted trips into different positions with their mouse
+      cursor, this is an example of the manipulation form of interactive design principles as the user can physically
+      change the position of the wishlisted items.
+    </p>
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5"
+        aria-expanded="false" aria-controls="collapseExample5">
+        Click to Show Image!
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample5">
+      <div class="card card-body">
+        <img src="Interactivity.png">
+      </div>
+    </div>
+    <h6 id="scrollspyHeading8">Metaphors</h6>
+    <p>In our project, metaphors are generally used to enable familiarity with a symbol or button. An example of this
+      would be the eye symbol in the password field that reveals and hides the typed characters once clicked,
+      representing the visibility of the password. Another example is the heart icon used on the navigation bar that
+      brings the user to the wishlist page, representing the area where liked trips reside.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6"
+          aria-expanded="false" aria-controls="collapseExample6">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample6">
+        <div class="card card-body">
+          <img src="Metaphor.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading9">Feedback</h6>
+    <p>Throughout our system, it is represented in different forms with the goal of giving the user more information as
+      to what events are taking place. During the signup phase of account creation, the user will be prompted for a
+      password, as the password is typed, the originally red rules will begin to change to green or if ignored will stay
+      red. Additionally, on the login page, if the user has an unsuccessful login, a message will display saying
+      ‘Incorrect login or password’ to keep the user informed on why it was unsuccessful.
+    </p>
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7"
+        aria-expanded="false" aria-controls="collapseExample7">
+        Click to Show Image!
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample7">
+      <div class="card card-body">
+        <img src="Feedback.png">
+      </div>
+    </div>
+    <h6 id="scrollspyHeading10">80/20 Rule</h6>
+    <p>For the account information page, we enable the 80/20 rule by placing tabs with extended contextual functionality
+      for that tab. For example, features in the settings tab like ‘Delete account’ are found only within that tab.
+      Therefore on each tab, there is 20% visible functionality, with the rest being layered or in menus. This is
+      effective since the ‘Overview’ tab shows the most relevant or popular features with the other more in depth
+      features hidden in the layers of the webpage.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8"
+          aria-expanded="false" aria-controls="collapseExample8">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample8">
+        <div class="card card-body">
+          <img src="number Rule.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading11">Flexibility</h6>
+    <p>Our system approaches flexibility by offering a range of options for the user under the account settings page.
+      Some settings options include the ability to enable or disable notifications about trip sales and allowing or
+      disallowing the receipt of relevant emails from our travel company. These settings allow the user to customize
+      their experience with the system in various ways to suit their needs or wants.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9"
+          aria-expanded="false" aria-controls="collapseExample9">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample9">
+        <div class="card card-body">
+          <img src="Flexibility.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading12">Mapping</h6>
+    <p>When booking a trip, the mapping design principle allowed us to define the order of the actions in an intuitive
+      and easy to understand way for the user. It makes more sense to display the trip and passenger information to the
+      user first so that there is no confusion or selections needed before proceeding to purchasing. This is how our
+      system functions, first the user will be shown the trip information being selected, then they can enter their
+      passenger information and confirm and only after this confirmation is the user brought to the card and billing
+      information pages.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10"
+          aria-expanded="false" aria-controls="collapseExample10">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample10">
+        <div class="card card-body">
+          <img src="Mapping.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading13">Error Prevention</h6>
+    <p>On the wishlist page, the user’s ability to remove their wishlisted items will be locked until they enter editing
+      mode by clicking the ‘Edit Wishlist’ button to ensure their intent and preventing misclicks. Another example of
+      error prevention in our system is the </p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11"
+          aria-expanded="false" aria-controls="collapseExample11">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample11">
+        <div class="card card-body">
+          <img src="Error Prevention.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading14">Confirmation</h6>
+    <p>To remove wishlisted items, the user must first click the ‘Edit Wishlist’ button to enable editing features, once
+      clicked this button brings up a confirmation screen to ensure that the user is meant to enter editing mode and if
+      not, a way to go back to the original screen.</p>
+    <p>Confirmation is also represented on the booking pages that require user confirmation before proceeding to
+      payment, and to confirm the payment information is correct.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12"
+          aria-expanded="false" aria-controls="collapseExample12">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample12">
+        <div class="card card-body">
+          <img src="Confirmation.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading15">Diversity</h6>
+    <p>The wishlist page features a ranking system based on the placement of wishlisted trips, defaulting to the order
+      in which the trips were wishlisted. If the user were wanting to rearrange these items to show more interesting
+      ones at the top, there are two separate functions to allow this. First, the user can click on the trip card and
+      drag the item to its desired space. Otherwise, the user can click the up and down arrow buttons to move the item
+      card one spot up or down at a time. Therefore, the diversity comes from the ability to move these trip cards with
+      unique functionalities to choose from.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample13"
+          aria-expanded="false" aria-controls="collapseExample13">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample13">
+        <div class="card card-body">
+          <img src="Diversity.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading16">Selective Attention</h6>
+    <p>Our redesign improves upon the selective attention principle by our initial reorder of all the webpages into a
+      more intuitive layout. Especially in terms of user flow in relation to our defined user goals, the reorder
+      provided a much more user-friendly layout, where all the function of the website appears in the proper context.
+    </p>
+    <h6 id="scrollspyHeading17">Hick's Law</h6>
+    <p>Hick’s Law is represented in our system on the search and results page that reduces the number of trips being shown as the user begins to add additional search criteria.  For example, if the full database of trips is being shown to begin with, when the user begins typing a location, the number of resulting trips will decrease until only the relevant trips are in the results section.</p>
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample14"
+        aria-expanded="false" aria-controls="collapseExample14">
+        Click to Show Image!
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample14">
+      <div class="card card-body">
+        <img src="Hicks.png">
+      </div>
+    </div>
+    <h6 id="scrollspyHeading18">Fidelity Principle</h6>
+    <p>Using the fidelity principle, the trip information page only displays information that is relevant to the trip
+      being viewed. On each trip page, the user will be able to find all the information about that trip alone and
+      nothing else to ensure that all the information represented is useful.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample15"
+          aria-expanded="false" aria-controls="collapseExample15">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample15">
+        <div class="card card-body">
+          <img src="Fidelity.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading20">Simplicity</h6>
+    <p>When booking a trip, payment information requires the input of credit card information where each field such as
+      number, expiry date, and CVV are formatted differently. To make entering this information simpler to the user, we
+      designed these fields with auto-formatting that automatically takes the user’s entries and places them into the
+      proper formatting of each respective field.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample16"
+          aria-expanded="false" aria-controls="collapseExample16">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample16">
+        <div class="card card-body">
+          <img src="Simplicity.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading21">Consistency</h6>
+    <p>Consistency was an element of focus throughout the system in the form of both external and internal consistency.
+      For external, our system implements similar features to those of other travel websites. For internal, our system
+      uses the same navigation bar throughout the entire experience as well as the use of the same colour palette,
+      button styles, and trip card styles across the system.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample17"
+          aria-expanded="false" aria-controls="collapseExample17">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample17">
+        <div class="card card-body">
+          <img src="Consistency.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading22">Learnability</h6>
+    <p>Our system is learnable through not only the aid of tooltips and easy to read error messages that instruct the
+      user in various ways, but also through the help document provided that gives an overview of each webpage in the
+      system and answers some basic Q&A questions like ‘How do I book a ticket?’.</p>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample18"
+          aria-expanded="false" aria-controls="collapseExample18">
+          Click to Show Image!
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample18">
+        <div class="card card-body">
+          <img src="Learnability.png">
+        </div>
+      </div>
+    <h6 id="scrollspyHeading23">Working Memory Principle</h6>
+    <p>By providing the user autofilled information of the selected trip in the booking pages, the user does not have to remember any extra information about the trip in order to complete a booking.  On top of this, the wishlist page provides the user a way to reduce the need for working memory by allowing them to favourite trips that seem interesting.  Then instead of having to search for them again which would require more memory, they can simply navigate to the wishlist page to see the trip again.</p>
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample19"
+        aria-expanded="false" aria-controls="collapseExample19">
+        Click to Show Image!
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample19">
+      <div class="card card-body">
+        <img src="Working Memory.png">
+      </div>
+    </div>
+    <h4 id="scrollspyHeading24">Heuristic Evaluations</h4>
+    <h6>1. Visibilty of System Status</h6>
+    <p>The first principle is about keeping users informed at each step of their interaction with the website.
+      Therefore, the website should be predictable which means that users should be able to know
+      what to expect in the next interaction. Our bus booking travel agency website is easy to predict at
+      every step of interaction.</p>
+    <p>
+      For example, the buttons on the main page helps users to expect what the next page will be
+      if they click on those buttons.
+    </p>
+    <img src="1. Visibility.png" width="1100" height="500">
+    <p>
+      Also, the wishlist page is another valuable example to the visibility of the system status. As it can be seen, a
+      user can assume the next step of their action by clicking on the buttons.
+    </p>
+    <img src="1. 2 Visibility.png" width="800" height="600">
+    <h6 id="scrollspyHeading25">2. Match between system and the real world</h6>
+    <p>The website establishes a decent connection between the system and the real world.
+      The familiar jargon, icons, and other expressions used on our website gives the user a real-world like experience.</p>
+    <p>
+      For example, this wishlist ‘heart’, ‘bus’, ‘search glass’, and ‘question mark’ icons show familiarity with the
+      real world.
+    </p>
+    <img src="2. Match between.PNG" width="800" height="150">
+    <p>Another good example is the delete button used to remove the bookings from the user’s wishlist and bookings page.
+    </p>
+    <img src="2.2 Match between.PNG" width="700" height="50">
+    <p>While the system has some good examples of this heuristic, it still lacks a good amount of them. </p>
+    <h6 id="scrollspyHeading26">3. User Control and Freedom</h6>
+    <p>The user can navigate through the website as they please. They can log out the website easily by clicking on less
+      than a few buttons, or they can pick a trip and go to the payment option with less than a few button clicks. </p>
+    <img src="3. User Control.PNG" width="500" height="250">
+    <p>Booking</p>
+    <img src="3.2 User Control.PNG" width="750" height="250">
+    <p>Payment</p>
+    <img src="3.3 User Control.PNG" width="700" height="250">
+    <h6 id="scrollspyHeading27">4. Consistency and Standards</h6>
+    <p>Each page on the website is consistent with one another in terms of layout, design, and styles. In addition to
+      this, the design language used on the website is consistent on every page and this can avoid any confusing situations.</p>
+    <p>
+      Also, a user can change the order of trips in the wishlist by dragging and dropping to the row they want to.
+      (By dragging the trip frame from anywhere of it and dropping to the row user wants)
+    </p>
+    <img src="1. 2 Visibility.png" width="800" height="600">
+    <h6 id="scrollspyHeading28">5. Error Prevention</h6>
+    <p>Error Prevention was one of our main concerns when we first started to think about the redesign of the old
+      website. As a group, we wanted to make sure that at each step, users will be asked to confirm their action such as
+      payment and editing the wishlist. Below, you can see a good example of error prevention from our website.</p>
+    <p>
+      Remove(Trash Icon) is disabled until the user enters editing mode.
+    </p>
+    <p>
+      - Entering editing mode required the user to confirm their intent.
+    </p>
+    <img src="5. Error Prevention.PNG" width="750" height="170">
+    <p>Delete Booking</p>
+    <img src="5.1 Error Prevention.PNG" width="850" height="400">
+    <p>Also, by adding constraints, we aimed to minimize the human errors.</p>
+    <img src="5.3 Error Prevention.PNG" width="450" height="400">
+    <h6 id="scrollspyHeading29">6. Recognition Rather than Recall</h6>
+    <p>The old website that we improved did not have any wishlist
+      or favorites option so that users can review the trips they liked later. This would save users time and less
+      memory, since it takes more effort to look for trips again when they want.</p>
+    <img src="6. Recognition.PNG" width="800" height="400">
+    <h6 id="scrollspyHeading30">7. Flexibility and Efficiency of Use</h6>
+    <p>Our website is efficient and simple enough to be used by different types of users. Website has two main pages:
+      one is landing page ( where anyone who enters to the website is directed) and other is home page ( where
+      registered users are directed).</p>
+    <p>By providing these two options, our system aims to provide a better experience for registered users where they can
+      manage their booking and wishlists easily. </p>
+    <P>Landing Page</P>
+    <img src="7. Flexibility.PNG" width="1100" height="500">
+    <P>Home Page</P>
+    <img src="7.2 Flexibility.PNG" width="1100" height="500">
+    <h6 id="scrollspyHeading31">8. Aesthetic and Minimalist Design</h6>
+    <p>The minimalist and simple design of the website starts with the main landing page. It is extremely easy for a
+      user to navigate on the main page and to manage their bookings.</p>
+    <img src="7.2 Flexibility.PNG" width="1100" height="500">
+    <p>Another good example for minimalist design on the website is ‘My Account’ page. It is very clear for the user to
+      execute a certain task.</p>
+    <img src="8.2 Minimalist.PNG" width="500" height="400">
+    <h6 id="scrollspyHeading32">9. Help Users Recognize, Dianose, and Recover from Errors</h6>
+    <p>The website provides clear messages when an error occurs either due to system or user error. For example, in the
+      case of a wrong password or email input, the user is informed.</p>
+    <img src="9.PNG" width="500" height="500">
+    <p>Also, when a new user wants to sign up, they can see the requirements for the password.
+    </p>
+    <img src="9.1.PNG" width="400" height="400">
+    <p>In addition to this, before the user enters their payment details, the system warns them about the correct
+      formatting.</p>
+    <img src="9.3.PNG" width="600" height="500">
+    <h6 id="scrollspyHeading33">10. Help and Documentation</h6>
+    <p>
+      With the Q&A section, the website aims to assist the users when an error occurs. A user can find commonly asked
+      questions about certain situations and get informed about solving them.
+    </p>
+    <img src="10.PNG" width="500" height="400">
+    <h4 id="scrollspyHeading34">Final Thoughts</h4>
+    <p>Our project aimed to implement a number of good design principles from the beginning in order to transform the
+      old bus booking website to a well-designed up-to-date website. These design principles are evaluated above using
+      ten heuristics by Nielsen Norman Group. Some improvements that were planned are not implemented due to lack of
+      time. In the below list, the final necessary improvements can be reviewed.
+    </p>
+    <h6 id="scrollspyHeading32">1. User Control & Freedom</h6>
+    <p>To give users more control and freedom, two-way search trips option would be a valuable addition. </p>
+    <img src="Thoughts1.PNG">
+    <h6 id="scrollspyHeading32">2. Visibility of System Status</h6>
+    <p>To catch the user attention at first sight, the buttons under ‘My Account’ button could be moved the navbar.</p>
+    <img src="Thoughts2.PNG">
+    <h6 id="scrollspyHeading32">3. Help and Documentation</h6>
+    <p>To be a better guide for the inexperienced users, the documentation on the website should be more clear and
+      assisting. </p>
+    <img src="Thoughts3.PNG" width="900" height="400">
+    <p>The cities under the most Traveled Cities table should have been linked to a page where it has some exciting
+      information about the regions.</p>
+    <img src="Thoughts4.PNG">
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
